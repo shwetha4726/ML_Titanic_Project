@@ -10,7 +10,7 @@ def home():
         "message":"Titanic Prediction API is running"
     }
 @app.post("/predict")
-def predict survival(passenger:Passenger):
+def predict_survival(passenger:Passenger):
      result=predict(passenger.model_dump())
      return result
 
