@@ -8,8 +8,4 @@ def predict(data: dict):
     prediction=pipeline.predict(df)[0]
     probablity=pipeline.predict_proba(df)[0].tolist()
     
-    return{
-          "prediction": int(prediction),
-          "probablity": {
-             "No Survival": probablity[0],"Survival":probablity[1]}
-        }
+    return {"prediction": int(prediction), "probablity": {"No Survival": probablity[0], "Survival":probablity[1]}}
