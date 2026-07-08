@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from predictor import predictor
+from predictor import predict
 from schemas import Passenger
 app = FastAPI(title="Titanic Survival API",
              version="1.0")
